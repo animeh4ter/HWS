@@ -52,7 +52,7 @@ class Account:
     #     return self.__surname
     #
     # def __set_percent(self, percent):
-    #     if Account.__check_val_int(percent) and percent >= 1:
+    #     if Account.__check_val_int(percent) and percent > 0:
     #         self.__percent = percent
     #
     # def get_percent(self):
@@ -90,7 +90,7 @@ class Account:
 
     @percent.setter
     def percent(self, percent):
-        if Account.__check_val_int(percent) and percent >= 1:
+        if Account.__check_val_int(percent) and percent > 0:
             self.__percent = percent
 
     @property
